@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+/* HydroGrameen is intentionally scoped to the mount point for safe GHL embedding. */
+#hydrogrameen-app { color: #1E2528; width: 100%; }
+#hydrogrameen-app *, #hydrogrameen-app *::before, #hydrogrameen-app *::after { box-sizing: border-box; }
+#hydrogrameen-app .hg-site { --navy:#082E43; --deep:#0B4F6C; --river:#2E86AB; --sky:#7CC9E8; --mint:#DDF4ED; --green:#3D7A57; --ink:#1E2528; --muted:#60717B; --line:#E3ECEE; --mist:#F2F7F8; --paper:#FFFFFF; --serif:'Roboto Slab',Georgia,serif; --sans:'Open Sans',Arial,sans-serif; --shadow:0 20px 60px rgba(9,53,69,.1); font-family:var(--sans); color:var(--ink); background:var(--paper); line-height:1.65; font-size:16px; overflow:hidden; position:relative; }
+#hydrogrameen-app .hg-site a { color:inherit; text-decoration:none; }
+#hydrogrameen-app .hg-site a:focus-visible, #hydrogrameen-app .hg-site button:focus-visible, #hydrogrameen-app .hg-site input:focus-visible, #hydrogrameen-app .hg-site select:focus-visible, #hydrogrameen-app .hg-site textarea:focus-visible, #hydrogrameen-app .hg-site summary:focus-visible { outline:3px solid var(--sky); outline-offset:4px; }
+#hydrogrameen-app .hg-site img, #hydrogrameen-app .hg-site svg { max-width:100%; }
+#hydrogrameen-app .hg-site img { display:block; }
+#hydrogrameen-app .hg-site button, #hydrogrameen-app .hg-site input, #hydrogrameen-app .hg-site textarea, #hydrogrameen-app .hg-site select { font:inherit; }
+#hydrogrameen-app .hg-site button { cursor:pointer; }
+#hydrogrameen-app .hg-site h1, #hydrogrameen-app .hg-site h2, #hydrogrameen-app .hg-site h3, #hydrogrameen-app .hg-site h4, #hydrogrameen-app .hg-site p { margin:0; }
+#hydrogrameen-app .hg-site h1, #hydrogrameen-app .hg-site h2, #hydrogrameen-app .hg-site h3 { line-height:1.15; letter-spacing:-.035em; }
+#hydrogrameen-app .hg-site h1, #hydrogrameen-app .hg-site h2 { font-family:var(--serif); font-weight:600; }
+#hydrogrameen-app .hg-site h3 { font-size:1.13rem; }
+#hydrogrameen-app .hg-site p { color:var(--muted); }
+#hydrogrameen-app .hg-site ul { margin:0; padding:0; list-style:none; }
+#hydrogrameen-app .hg-container { width:min(1160px,calc(100% - 64px)); margin:0 auto; }
+#hydrogrameen-app .hg-skip { position:absolute; top:-100px; left:20px; z-index:99; background:white; color:var(--navy); padding:12px 18px; border-radius:12px; font-weight:700; }
+#hydrogrameen-app .hg-skip:focus { top:12px; }
+#hydrogrameen-app .hg-icon { width:20px; height:20px; flex:none; display:inline-block; vertical-align:middle; }
+#hydrogrameen-app .hg-icon-sm { width:16px; height:16px; }
+#hydrogrameen-app .hg-icon-lg { width:24px; height:24px; }
+#hydrogrameen-app .hg-eyebrow { display:inline-flex; align-items:center; gap:10px; color:var(--deep); font-size:.72rem; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+#hydrogrameen-app .hg-eyebrow::before { content:''; width:19px; height:2px; border-radius:2px; background:var(--green); }
+#hydrogrameen-app .hg-eyebrow-light { color:#B4DFDF; }
+#hydrogrameen-app .hg-eyebrow-light::before { background:#B4DFDF; }
+#hydrogrameen-app .hg-section { padding:102px 0; }
+#hydrogrameen-app .hg-section-sm { padding:72px 0; }
+#hydrogrameen-app .hg-section-mist { background:var(--mist); }
+#hydrogrameen-app .hg-section-navy { background:var(--navy); color:#fff; }
+#hydrogrameen-app .hg-section-heading { max-width:720px; margin-bottom:40px; }
+#hydrogrameen-app .hg-section-heading p { margin-top:18px; max-width:650px; font-size:1.03rem; line-height:1.82; }
+#hydrogrameen-app .hg-title { font-size:clamp(2rem,3.3vw,3.12rem); color:var(--navy); margin-top:17px!important; }
+#hydrogrameen-app .hg-title-sm { font-size:clamp(1.65rem,2.8vw,2.6rem); color:var(--navy); margin-top:16px!important; }
+#hydrogrameen-app .hg-title-light { color:#fff; }
+#hydrogrameen-app .hg-lead { font-size:1.12rem; line-height:1.85; }
+#hydrogrameen-app .hg-overline { text-transform:uppercase; font-size:.72rem; letter-spacing:.16em; font-weight:800; color:var(--green)!important; }
+#hydrogrameen-app .hg-prose { max-width:790px; }
+#hydrogrameen-app .hg-prose p + p { margin-top:20px; }
+#hydrogrameen-app .hg-prose p { line-height:1.95; }
+#hydrogrameen-app .hg-muted { color:var(--muted)!important; }
+#hydrogrameen-app .hg-small { font-size:.86rem; }
+#hydrogrameen-app .hg-divider { border:0; border-top:1px solid var(--line); margin:34px 0; }
+#hydrogrameen-app .hg-kicker { display:inline-flex; align-items:center; gap:8px; font-size:.74rem; text-transform:uppercase; font-weight:800; letter-spacing:.12em; color:var(--green); }
+
+/* Header */
+#hydrogrameen-app .hg-header { position:sticky; top:0; background:rgba(255,255,255,.97); backdrop-filter:blur(16px); z-index:50; border-bottom:1px solid rgba(222,231,235,.8); }
+#hydrogrameen-app .hg-header-inner { display:flex; align-items:center; justify-content:space-between; gap:22px; min-height:83px; }
+#hydrogrameen-app .hg-brand { display:flex; align-items:center; gap:12px; min-width:0; }
+#hydrogrameen-app .hg-brand img { height:46px; width:46px; flex:none; }
+#hydrogrameen-app .hg-brand-name { color:var(--navy); font-size:1.35rem; letter-spacing:-.045em; line-height:1.15; font-weight:800; }
+#hydrogrameen-app .hg-brand-sub { color:var(--muted); letter-spacing:.01em; font-size:.67rem; margin-top:4px; font-weight:600; }
+#hydrogrameen-app .hg-nav { display:flex; align-items:center; gap:24px; }
+#hydrogrameen-app .hg-nav-link { font-size:.83rem; font-weight:700; color:#3E5968!important; transition:color .2s; position:relative; white-space:nowrap; padding:15px 0; }
+#hydrogrameen-app .hg-nav-link:hover, #hydrogrameen-app .hg-nav-link[aria-current='page'] { color:var(--deep)!important; }
+#hydrogrameen-app .hg-nav-link[aria-current='page']::after { content:''; position:absolute; bottom:6px; height:3px; left:0; right:0; background:var(--green); border-radius:2px; }
+#hydrogrameen-app .hg-header-actions { display:flex; align-items:center; gap:12px; }
+#hydrogrameen-app .hg-menu-toggle { display:none; color:var(--navy); background:var(--mist); width:44px; height:44px; border:1px solid var(--line); border-radius:12px; align-items:center; justify-content:center; }
+
+/* Buttons */
+#hydrogrameen-app .hg-btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:14px 23px; border-radius:9px; font-weight:800; font-size:.86rem; transition:transform .2s,background .2s,box-shadow .2s; border:1px solid transparent; line-height:1.3; min-height:48px; text-align:center; }
+#hydrogrameen-app .hg-btn:hover { transform:translateY(-2px); }
+#hydrogrameen-app .hg-btn-primary { background:var(--deep); color:#fff!important; box-shadow:0 10px 20px rgba(11,79,108,.15); }
+#hydrogrameen-app .hg-btn-primary:hover { background:var(--navy); box-shadow:0 14px 26px rgba(11,79,108,.22); }
+#hydrogrameen-app .hg-btn-light { background:#fff; color:var(--navy)!important; }
+#hydrogrameen-app .hg-btn-light:hover { background:#EEF8F9; }
+#hydrogrameen-app .hg-btn-outline { background:transparent; color:var(--deep)!important; border-color:#B5CFD8; }
+#hydrogrameen-app .hg-btn-outline:hover { background:#EDF7F8; }
+#hydrogrameen-app .hg-btn-ghost { background:rgba(255,255,255,.10); color:white!important; border-color:rgba(255,255,255,.35); }
+#hydrogrameen-app .hg-btn-ghost:hover { background:rgba(255,255,255,.19); }
+#hydrogrameen-app .hg-cta-row { display:flex; flex-wrap:wrap; align-items:center; gap:13px; margin-top:30px; }
+#hydrogrameen-app .hg-text-link { display:inline-flex; align-items:center; gap:8px; color:var(--deep)!important; font-weight:800; font-size:.86rem; }
+#hydrogrameen-app .hg-text-link .hg-icon { transition:transform .2s; }
+#hydrogrameen-app .hg-text-link:hover .hg-icon { transform:translateX(4px); }
+#hydrogrameen-app .hg-text-link-light { color:#B5E3E4!important; }
+
+/* Hero and page headers */
+#hydrogrameen-app .hg-hero { background:linear-gradient(145deg,#062B3F,#083D52 55%,#0F5166); color:#fff; position:relative; isolation:isolate; }
+#hydrogrameen-app .hg-hero::before { content:''; pointer-events:none; position:absolute; inset:0; opacity:.29; background:radial-gradient(circle at 74% 17%,#4086A4 0,transparent 35%),radial-gradient(circle at 4% 100%,#3D7A57 0,transparent 37%); z-index:-1; }
+#hydrogrameen-app .hg-hero::after { content:''; position:absolute; inset:auto 0 0; height:110px; opacity:.3; background:radial-gradient(ellipse 160% 70px at 50% 110%,#4FA5BA 0%,transparent 78%); z-index:-1; }
+#hydrogrameen-app .hg-hero-grid { display:grid; grid-template-columns:1.03fr .97fr; align-items:center; gap:65px; min-height:660px; padding:90px 0 92px; }
+#hydrogrameen-app .hg-hero h1 { font-size:clamp(3.25rem,5vw,5.45rem); color:#fff; margin-top:27px; line-height:1.13; max-width:770px; letter-spacing:-.045em; }
+#hydrogrameen-app .hg-hero h1 em { font-style:normal; color:#8EE1CF; }
+#hydrogrameen-app .hg-hero-copy > p { color:#D6E8E9; font-size:1.08rem; line-height:1.85; margin-top:25px; max-width:555px; }
+#hydrogrameen-app .hg-hero-note { color:#A8CAD2; font-size:.76rem; margin-top:34px; display:flex; align-items:center; gap:9px; }
+#hydrogrameen-app .hg-hero-note span { display:block; width:8px; height:8px; background:#8EE1CF; border-radius:50%; }
+#hydrogrameen-app .hg-hero-visual { position:relative; isolation:isolate; min-width:0; }
+#hydrogrameen-app .hg-hero-visual::before { content:''; position:absolute; top:-19px; right:-17px; width:70%; height:74%; border:1px solid rgba(207,233,238,.29); border-radius:160px 10px 150px 10px; z-index:-1; }
+#hydrogrameen-app .hg-hero-image { height:515px; border-radius:160px 14px 145px 18px; overflow:hidden; position:relative; box-shadow:0 38px 75px rgba(0,13,24,.26); }
+#hydrogrameen-app .hg-hero-image img { width:100%; height:100%; object-fit:cover; object-position:52% center; }
+#hydrogrameen-app .hg-hero-image::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 42%,rgba(4,33,43,.80) 100%); }
+#hydrogrameen-app .hg-photo-overlay { position:absolute; z-index:1; bottom:33px; left:34px; right:35px; }
+#hydrogrameen-app .hg-photo-overlay span { color:#CDE9E9; text-transform:uppercase; letter-spacing:.16em; font-size:.68rem; font-weight:800; }
+#hydrogrameen-app .hg-photo-overlay strong { display:block; font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.37; color:#fff; margin-top:8px; }
+#hydrogrameen-app .hg-hero-float { position:absolute; left:-65px; bottom:73px; z-index:2; border-radius:13px; display:flex; align-items:center; gap:13px; padding:18px 20px; color:var(--navy); background:#fff; box-shadow:var(--shadow); max-width:250px; }
+#hydrogrameen-app .hg-float-icon { width:45px; height:45px; display:flex; align-items:center; justify-content:center; border-radius:11px; color:var(--deep); background:#DAF2F2; flex:none; }
+#hydrogrameen-app .hg-hero-float strong { font-size:.82rem; line-height:1.5; display:block; }
+#hydrogrameen-app .hg-hero-float small { font-size:.69rem; line-height:1.4; display:block; color:var(--muted); margin-top:3px; }
+#hydrogrameen-app .hg-page-hero { background:radial-gradient(circle at 88% 0,#164D63 0,transparent 32%),linear-gradient(125deg,#072C41,#0D5268); color:#fff; padding:92px 0 98px; position:relative; }
+#hydrogrameen-app .hg-page-hero::after { content:''; position:absolute; right:-5%; bottom:10%; width:450px; height:450px; border:1px solid rgba(196,231,237,.14); border-radius:50%; pointer-events:none; box-shadow:0 0 0 85px rgba(196,231,237,.035),0 0 0 170px rgba(196,231,237,.025); }
+#hydrogrameen-app .hg-page-hero-grid { display:grid; grid-template-columns:1.1fr .9fr; align-items:center; gap:55px; }
+#hydrogrameen-app .hg-page-hero h1 { font-size:clamp(2.75rem,4.5vw,4.65rem); color:#fff; margin-top:20px; max-width:760px; }
+#hydrogrameen-app .hg-page-hero p { color:#C7E0E5; margin-top:23px; max-width:660px; font-size:1.08rem; line-height:1.85; }
+#hydrogrameen-app .hg-page-hero .hg-breadcrumb { color:#B4D3DB; font-size:.78rem; font-weight:700; margin-bottom:35px; display:flex; gap:10px; align-items:center; }
+#hydrogrameen-app .hg-page-hero .hg-breadcrumb a { text-decoration:underline; text-underline-offset:3px; }
+#hydrogrameen-app .hg-page-hero-art { padding:25px; background:rgba(255,255,255,.06); border:1px solid rgba(211,242,243,.19); border-radius:22px; position:relative; z-index:1; }
+#hydrogrameen-app .hg-page-hero-art img { border-radius:12px; width:100%; height:260px; object-fit:cover; }
+#hydrogrameen-app .hg-page-hero-art span { display:block; font-size:.75rem; color:#D0E6E9; padding:12px 2px 0; }
+
+/* Cards / grids */
+#hydrogrameen-app .hg-grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+#hydrogrameen-app .hg-grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+#hydrogrameen-app .hg-grid-4 { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+#hydrogrameen-app .hg-card { background:#fff; border:1px solid var(--line); border-radius:15px; padding:31px; transition:box-shadow .2s,transform .2s; }
+#hydrogrameen-app .hg-card:hover { transform:translateY(-3px); box-shadow:var(--shadow); }
+#hydrogrameen-app .hg-card-icon { width:54px; height:54px; background:#E5F3F4; border-radius:12px; color:var(--deep); display:flex; align-items:center; justify-content:center; margin-bottom:25px; }
+#hydrogrameen-app .hg-card h3 { color:var(--navy); margin-bottom:13px; }
+#hydrogrameen-app .hg-card p { line-height:1.85; font-size:.9rem; }
+#hydrogrameen-app .hg-card .hg-text-link { margin-top:22px; }
+#hydrogrameen-app .hg-number { font-family:var(--serif); color:#B6DBDD; font-size:2.9rem; line-height:1; font-weight:600; margin-bottom:19px; }
+#hydrogrameen-app .hg-soft-card { padding:34px; background:var(--mist); border:1px solid #E3EEEE; border-radius:16px; }
+#hydrogrameen-app .hg-soft-card h3 { color:var(--navy); margin:12px 0; }
+#hydrogrameen-app .hg-soft-card p { line-height:1.86; }
+#hydrogrameen-app .hg-mini-card { display:flex; align-items:flex-start; gap:17px; padding:20px 0; border-bottom:1px solid var(--line); }
+#hydrogrameen-app .hg-mini-card:last-child { border-bottom:0; }
+#hydrogrameen-app .hg-mini-card .hg-card-icon { width:42px; height:42px; min-width:42px; margin:0; }
+#hydrogrameen-app .hg-mini-card h3 { margin:0 0 7px; }
+#hydrogrameen-app .hg-mini-card p { font-size:.9rem; }
+#hydrogrameen-app .hg-pill { display:inline-flex; align-items:center; gap:6px; padding:7px 11px; border-radius:100px; font-size:.69rem; font-weight:800; letter-spacing:.02em; line-height:1; color:var(--deep); background:#D9EFF2; }
+#hydrogrameen-app .hg-pill-green { background:#E4F2E7; color:#2B6A43; }
+#hydrogrameen-app .hg-pill-neutral { background:#EEF1F2; color:#5B6B71; }
+#hydrogrameen-app .hg-pill-amber { color:#885F22; background:#F8F0DC; }
+#hydrogrameen-app .hg-tagline { font-family:var(--serif); font-size:clamp(1.7rem,3vw,2.8rem); line-height:1.4; color:var(--navy); font-weight:500; }
+#hydrogrameen-app .hg-split { display:grid; grid-template-columns:1fr 1fr; gap:78px; align-items:center; }
+#hydrogrameen-app .hg-split-wide { grid-template-columns:1.2fr .8fr; }
+#hydrogrameen-app .hg-split > * { min-width:0; }
+#hydrogrameen-app .hg-split-copy > p { margin-top:20px; line-height:1.92; }
+#hydrogrameen-app .hg-img-frame { position:relative; border-radius:17px; overflow:hidden; box-shadow:0 22px 55px rgba(8,48,62,.12); }
+#hydrogrameen-app .hg-img-frame img { width:100%; height:390px; object-fit:cover; }
+#hydrogrameen-app .hg-img-caption { font-size:.72rem; color:var(--muted); margin-top:12px!important; }
+#hydrogrameen-app .hg-quote { font-family:var(--serif); color:var(--navy); font-size:1.48rem; line-height:1.65; font-weight:500; }
+#hydrogrameen-app .hg-quote-mark { color:var(--river); font-size:4rem; font-family:var(--serif); line-height:1; margin-bottom:-7px; }
+
+/* Wide color story */
+#hydrogrameen-app .hg-water-band { background:linear-gradient(105deg,#083F53,#0D6070); border-radius:22px; padding:62px; position:relative; overflow:hidden; color:#fff; }
+#hydrogrameen-app .hg-water-band::after { content:''; position:absolute; pointer-events:none; width:420px; height:420px; border:1px solid rgba(255,255,255,.18); border-radius:50%; right:-90px; top:-175px; box-shadow:0 0 0 68px rgba(255,255,255,.055),0 0 0 135px rgba(255,255,255,.025); }
+#hydrogrameen-app .hg-water-band .hg-title, #hydrogrameen-app .hg-water-band .hg-title-sm { color:#fff; }
+#hydrogrameen-app .hg-water-band p { color:#D7EBEA; }
+#hydrogrameen-app .hg-water-band-grid { display:grid; grid-template-columns:1.25fr .75fr; align-items:center; gap:60px; position:relative; z-index:1; }
+#hydrogrameen-app .hg-water-band .hg-cta-row { margin-top:28px; }
+#hydrogrameen-app .hg-band-list { padding:8px 0 8px 28px; border-left:1px solid rgba(255,255,255,.3); }
+#hydrogrameen-app .hg-band-list li { color:#E2F1F1; display:flex; align-items:center; gap:13px; font-size:.91rem; padding:10px 0; }
+#hydrogrameen-app .hg-band-list svg { color:#B3E6D5; }
+
+/* Process */
+#hydrogrameen-app .hg-process { display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
+#hydrogrameen-app .hg-process::before { content:''; height:1px; width:75%; background:#C4DADD; top:24px; position:absolute; left:11.5%; }
+#hydrogrameen-app .hg-process-step { position:relative; padding-right:25px; }
+#hydrogrameen-app .hg-process-bubble { height:49px; width:49px; border:2px solid #B7D1D7; border-radius:50%; color:var(--deep); background:#fff; font-weight:800; display:flex; justify-content:center; align-items:center; position:relative; z-index:1; margin-bottom:28px; }
+#hydrogrameen-app .hg-process-step h3 { margin-bottom:11px; color:var(--navy); }
+#hydrogrameen-app .hg-process-step p { font-size:.88rem; line-height:1.8; }
+
+/* Program preview */
+#hydrogrameen-app .hg-visual-panel { padding:30px; background:#EAF4F3; border:1px solid #DCEBEA; border-radius:20px; }
+#hydrogrameen-app .hg-visual-panel .hg-caption { margin-top:15px; font-size:.74rem; line-height:1.6; }
+#hydrogrameen-app .hg-science-svg { width:100%; height:auto; border-radius:12px; display:block; }
+#hydrogrameen-app .hg-science-controls { display:flex; flex-wrap:wrap; gap:9px; margin:20px 0 0; }
+#hydrogrameen-app .hg-science-controls button { border:1px solid #C4D9DC; color:#386477; background:#fff; padding:11px 15px; font-weight:800; font-size:.76rem; border-radius:8px; }
+#hydrogrameen-app .hg-science-controls button[aria-pressed='true'] { background:var(--deep); border-color:var(--deep); color:#fff; }
+#hydrogrameen-app .hg-diagram-readout { background:#fff; border-radius:12px; border:1px solid #D6E7E6; padding:20px; margin-top:15px; }
+#hydrogrameen-app .hg-diagram-readout strong { display:block; color:var(--navy); margin-bottom:6px; }
+#hydrogrameen-app .hg-diagram-readout p { font-size:.85rem; }
+#hydrogrameen-app .hg-science-svg .hg-waterline { transition:transform .65s ease, opacity .5s; transform-origin:50% 50%; }
+#hydrogrameen-app .hg-science-svg .hg-blue-water { transition:all .65s ease; }
+#hydrogrameen-app .hg-science-svg.hg-mode-depletion .hg-waterline { transform:translateY(58px); }
+#hydrogrameen-app .hg-science-svg.hg-mode-recharge .hg-waterline { transform:translateY(-12px); }
+#hydrogrameen-app .hg-science-svg.hg-mode-depletion .hg-blue-water { opacity:.45; }
+#hydrogrameen-app .hg-science-svg.hg-mode-recharge .hg-blue-water { opacity:.94; }
+#hydrogrameen-app .hg-science-svg .hg-recharge-arrows { opacity:.18; transition:opacity .35s; }
+#hydrogrameen-app .hg-science-svg.hg-mode-recharge .hg-recharge-arrows { opacity:1; }
+#hydrogrameen-app .hg-diagram-caption { color:var(--muted); font-size:.73rem; padding:14px 0 0; }
+
+/* Media / archives */
+#hydrogrameen-app .hg-photo-card { padding:0; overflow:hidden; }
+#hydrogrameen-app .hg-photo-card img { width:100%; height:232px; object-fit:cover; }
+#hydrogrameen-app .hg-photo-card-body { padding:26px 27px 30px; }
+#hydrogrameen-app .hg-photo-card-body .hg-pill { margin-bottom:14px; }
+#hydrogrameen-app .hg-photo-card h3 { margin-bottom:11px; }
+#hydrogrameen-app .hg-project-card { border:1px solid var(--line); border-radius:17px; overflow:hidden; background:#fff; }
+#hydrogrameen-app .hg-project-card img { height:215px; width:100%; object-fit:cover; }
+#hydrogrameen-app .hg-project-card-body { padding:27px; }
+#hydrogrameen-app .hg-project-card h3 { color:var(--navy); font-size:1.25rem; margin:17px 0 11px; }
+#hydrogrameen-app .hg-project-card p { font-size:.91rem; line-height:1.86; }
+#hydrogrameen-app .hg-project-card .hg-text-link { margin-top:20px; }
+#hydrogrameen-app .hg-resource { display:flex; align-items:flex-start; gap:19px; background:#fff; padding:26px; border:1px solid var(--line); border-radius:13px; }
+#hydrogrameen-app .hg-resource-icon { border-radius:11px; width:52px; height:52px; min-width:52px; background:#E5F0F3; color:var(--deep); display:flex; align-items:center; justify-content:center; }
+#hydrogrameen-app .hg-resource h3 { color:var(--navy); margin:8px 0; }
+#hydrogrameen-app .hg-resource p { font-size:.87rem; line-height:1.8; }
+#hydrogrameen-app .hg-resource .hg-text-link { margin-top:13px; }
+#hydrogrameen-app .hg-faq { border-top:1px solid #DCE5E8; }
+#hydrogrameen-app .hg-faq:last-child { border-bottom:1px solid #DCE5E8; }
+#hydrogrameen-app .hg-faq summary { cursor:pointer; padding:20px 5px; color:var(--navy); font-weight:800; font-size:.95rem; display:flex; align-items:center; justify-content:space-between; gap:15px; list-style:none; }
+#hydrogrameen-app .hg-faq summary::-webkit-details-marker { display:none; }
+#hydrogrameen-app .hg-faq summary::after { content:'+'; color:var(--green); font-size:1.5rem; font-weight:400; }
+#hydrogrameen-app .hg-faq[open] summary::after { content:'−'; }
+#hydrogrameen-app .hg-faq p { padding:0 36px 23px 5px; font-size:.9rem; line-height:1.85; }
+#hydrogrameen-app .hg-checklist { display:grid; gap:15px; }
+#hydrogrameen-app .hg-checklist li { display:flex; gap:13px; align-items:flex-start; font-size:.93rem; color:#435866; }
+#hydrogrameen-app .hg-checklist .hg-icon { color:var(--green); }
+
+/* Team */
+#hydrogrameen-app .hg-founder { background:var(--mist); border:1px solid var(--line); border-radius:20px; padding:40px; display:grid; grid-template-columns:160px 1fr; gap:35px; }
+#hydrogrameen-app .hg-monogram { width:150px; height:150px; display:flex; align-items:center; justify-content:center; border-radius:18px; background:linear-gradient(130deg,#0B4F6C,#2E86AB); color:#fff; font-family:var(--serif); font-size:2.8rem; font-weight:600; letter-spacing:-.07em; }
+#hydrogrameen-app .hg-founder h2 { font-size:2rem; color:var(--navy); margin:13px 0; }
+#hydrogrameen-app .hg-founder p { margin-top:14px; }
+#hydrogrameen-app .hg-person { padding:23px; display:flex; flex-direction:column; gap:10px; border:1px solid var(--line); border-radius:12px; background:white; }
+#hydrogrameen-app .hg-person-avatar { width:51px; height:51px; border-radius:12px; background:#E8F1F1; color:var(--deep); display:flex; align-items:center; justify-content:center; font-size:.97rem; font-weight:800; }
+#hydrogrameen-app .hg-person h3 { color:var(--navy); margin-top:7px; }
+#hydrogrameen-app .hg-person p { font-size:.82rem; line-height:1.64; }
+#hydrogrameen-app .hg-person .hg-tag { font-size:.71rem; font-weight:700; color:var(--green); margin-top:auto; }
+
+/* Timeline / event */
+#hydrogrameen-app .hg-timeline { border-left:2px solid #D2E1E3; margin-left:12px; padding-left:31px; }
+#hydrogrameen-app .hg-timeline-item { position:relative; padding:0 0 34px; }
+#hydrogrameen-app .hg-timeline-item:last-child { padding-bottom:0; }
+#hydrogrameen-app .hg-timeline-item::before { content:''; position:absolute; width:12px; height:12px; border-radius:50%; background:var(--green); border:3px solid white; box-shadow:0 0 0 1px var(--green); left:-38px; top:7px; }
+#hydrogrameen-app .hg-timeline-item small { text-transform:uppercase; letter-spacing:.1em; font-weight:800; color:var(--green); }
+#hydrogrameen-app .hg-timeline-item h3 { margin:7px 0; color:var(--navy); }
+#hydrogrameen-app .hg-timeline-item p { font-size:.91rem; }
+#hydrogrameen-app .hg-event-panel { border-radius:20px; background:#E7F0EF; overflow:hidden; display:grid; grid-template-columns:1fr 1fr; }
+#hydrogrameen-app .hg-event-art { background:linear-gradient(160deg,#0C4661,#276E77); padding:45px; color:white; display:flex; flex-direction:column; justify-content:space-between; min-height:380px; position:relative; isolation:isolate; }
+#hydrogrameen-app .hg-event-art::after { content:''; position:absolute; width:290px; height:290px; border-radius:50%; border:2px solid #8AC8C4; right:-110px; bottom:-70px; box-shadow:0 0 0 60px rgba(195,235,232,.11),0 0 0 118px rgba(195,235,232,.055); z-index:-1; }
+#hydrogrameen-app .hg-event-art h3 { font-family:var(--serif); font-weight:600; color:#fff; font-size:2rem; line-height:1.3; }
+#hydrogrameen-app .hg-event-art p { color:#DBEDEC; font-size:.87rem; }
+#hydrogrameen-app .hg-event-info { padding:47px; }
+#hydrogrameen-app .hg-event-info h3 { margin:15px 0; font-size:1.55rem; color:var(--navy); }
+#hydrogrameen-app .hg-event-info p { font-size:.91rem; line-height:1.88; }
+#hydrogrameen-app .hg-event-info .hg-text-link { margin-top:20px; }
+
+/* Contact */
+#hydrogrameen-app .hg-contact-layout { display:grid; grid-template-columns:.78fr 1.22fr; gap:60px; align-items:start; }
+#hydrogrameen-app .hg-contact-detail { display:flex; align-items:flex-start; gap:15px; padding:25px 0; border-bottom:1px solid var(--line); }
+#hydrogrameen-app .hg-contact-detail .hg-card-icon { width:45px; height:45px; min-width:45px; margin:0; }
+#hydrogrameen-app .hg-contact-detail h3 { color:var(--navy); margin-bottom:5px; font-size:.98rem; }
+#hydrogrameen-app .hg-contact-detail p { font-size:.9rem; }
+#hydrogrameen-app .hg-contact-detail a { color:var(--deep); text-decoration:underline; }
+#hydrogrameen-app .hg-contact-form { padding:40px; background:#F4F8F9; border-radius:17px; border:1px solid #E0EAEA; }
+#hydrogrameen-app .hg-contact-form h2 { font-size:1.6rem; color:var(--navy); margin-bottom:10px; }
+#hydrogrameen-app .hg-form-help { font-size:.85rem; margin-bottom:24px!important; }
+#hydrogrameen-app .hg-field-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+#hydrogrameen-app .hg-field { display:grid; gap:8px; margin-bottom:18px; }
+#hydrogrameen-app .hg-field label { font-size:.79rem; font-weight:800; color:#385468; }
+#hydrogrameen-app .hg-field input, #hydrogrameen-app .hg-field textarea, #hydrogrameen-app .hg-field select { display:block; width:100%; border:1px solid #C9DBDF; border-radius:8px; background:#fff; padding:13px 15px; color:var(--navy); font-size:.91rem; }
+#hydrogrameen-app .hg-field textarea { min-height:147px; resize:vertical; }
+#hydrogrameen-app .hg-form-notice { font-size:.75rem; color:var(--muted); margin-top:13px!important; line-height:1.7; }
+#hydrogrameen-app .hg-ghl-iframe { width:100%; min-height:610px; border:0; background:#fff; border-radius:10px; }
+
+/* Footer */
+#hydrogrameen-app .hg-footer { background:#072B3E; color:white; }
+#hydrogrameen-app .hg-footer-inner { padding:71px 0 40px; }
+#hydrogrameen-app .hg-footer-top { display:grid; grid-template-columns:1.1fr 1.55fr .9fr; gap:70px; padding-bottom:62px; }
+#hydrogrameen-app .hg-footer .hg-brand-name { color:white; }
+#hydrogrameen-app .hg-footer .hg-brand-sub { color:#B2CCD2; }
+#hydrogrameen-app .hg-footer-top p { color:#B6D0D6; font-size:.87rem; margin-top:24px; line-height:1.95; }
+#hydrogrameen-app .hg-footer h3 { color:#fff; font-size:.81rem; margin:8px 0 20px; text-transform:uppercase; letter-spacing:.09em; }
+#hydrogrameen-app .hg-footer-links { display:grid; grid-template-columns:1fr 1fr; gap:13px 28px; }
+#hydrogrameen-app .hg-footer-links a, #hydrogrameen-app .hg-footer-contact a { color:#C5DDE0; font-size:.84rem; }
+#hydrogrameen-app .hg-footer-links a:hover, #hydrogrameen-app .hg-footer-contact a:hover { color:#fff; text-decoration:underline; }
+#hydrogrameen-app .hg-footer-contact { display:grid; align-content:start; gap:14px; }
+#hydrogrameen-app .hg-footer-contact span { color:#C5DDE0; font-size:.82rem; line-height:1.75; }
+#hydrogrameen-app .hg-footer-bottom { border-top:1px solid rgba(220,238,240,.18); padding-top:28px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:15px; }
+#hydrogrameen-app .hg-footer-bottom p { color:#A9C6CE; font-size:.72rem; }
+#hydrogrameen-app .hg-footer-bottom a { text-decoration:underline; text-underline-offset:3px; }
+#hydrogrameen-app .hg-source-note { border-left:3px solid var(--river); padding:14px 19px; background:#EEF6F7; font-size:.82rem; line-height:1.8; color:#416374; margin-top:26px; }
+#hydrogrameen-app .hg-source-note a { color:var(--deep); text-decoration:underline; font-weight:700; }
+#hydrogrameen-app .hg-source-note strong { color:var(--navy); }
+#hydrogrameen-app .hg-source-note-dark { background:rgba(255,255,255,.08); border-color:#91D8D0; color:#D4E8EB; }
+#hydrogrameen-app .hg-source-note-dark strong { color:white; }
+#hydrogrameen-app .hg-source-note-dark a { color:#B0EBE0; }
+
+/* Responsive */
+@media (max-width:1160px) {
+ #hydrogrameen-app .hg-nav { gap:15px; }
+ #hydrogrameen-app .hg-nav-link { font-size:.76rem; }
+ #hydrogrameen-app .hg-brand-name { font-size:1.14rem; }
+ #hydrogrameen-app .hg-brand-sub { font-size:.61rem; }
+ #hydrogrameen-app .hg-header-actions .hg-btn { padding:13px 15px; font-size:.77rem; }
+ #hydrogrameen-app .hg-hero-grid { gap:35px; }
+ #hydrogrameen-app .hg-hero h1 { font-size:clamp(3rem,5.2vw,5rem); }
+ #hydrogrameen-app .hg-hero-float { left:-30px; }
+}
+@media (max-width:1020px) {
+ #hydrogrameen-app .hg-menu-toggle { display:flex; }
+ #hydrogrameen-app .hg-nav { display:none; position:absolute; top:calc(100% + 1px); left:0; right:0; background:white; border-bottom:1px solid var(--line); padding:17px max(24px,calc((100% - 850px)/2)); box-shadow:0 14px 27px rgba(9,47,66,.08); flex-direction:column; align-items:stretch; gap:0; max-height:calc(100vh - 80px); overflow:auto; }
+ #hydrogrameen-app .hg-nav.hg-nav-open { display:flex; }
+ #hydrogrameen-app .hg-nav-link { padding:15px; font-size:.9rem; border-radius:8px; }
+ #hydrogrameen-app .hg-nav-link[aria-current='page'] { background:var(--mist); }
+ #hydrogrameen-app .hg-nav-link[aria-current='page']::after { display:none; }
+ #hydrogrameen-app .hg-hero-grid { grid-template-columns:1fr 1fr; min-height:600px; }
+ #hydrogrameen-app .hg-hero-image { height:445px; }
+ #hydrogrameen-app .hg-hero-float { left:-30px; bottom:45px; }
+ #hydrogrameen-app .hg-grid-4 { grid-template-columns:repeat(2,1fr); }
+ #hydrogrameen-app .hg-split { gap:40px; }
+ #hydrogrameen-app .hg-footer-top { gap:40px; }
+}
+@media (max-width:800px) {
+ #hydrogrameen-app .hg-container { width:min(100% - 38px,720px); }
+ #hydrogrameen-app .hg-section { padding:76px 0; }
+ #hydrogrameen-app .hg-section-sm { padding:60px 0; }
+ #hydrogrameen-app .hg-hero-grid { grid-template-columns:1fr; gap:40px; padding:66px 0 82px; }
+ #hydrogrameen-app .hg-hero h1 { font-size:clamp(3.2rem,8vw,4.5rem); }
+ #hydrogrameen-app .hg-hero-visual { max-width:570px; margin:auto; width:90%; }
+ #hydrogrameen-app .hg-hero-image { height:450px; }
+ #hydrogrameen-app .hg-page-hero { padding:70px 0 78px; }
+ #hydrogrameen-app .hg-page-hero-grid { grid-template-columns:1fr; }
+ #hydrogrameen-app .hg-page-hero-art { display:none; }
+ #hydrogrameen-app .hg-split, #hydrogrameen-app .hg-split-wide, #hydrogrameen-app .hg-water-band-grid { grid-template-columns:1fr; gap:37px; }
+ #hydrogrameen-app .hg-water-band { padding:44px 32px; }
+ #hydrogrameen-app .hg-band-list { padding-left:0; border-left:0; border-top:1px solid rgba(255,255,255,.3); padding-top:23px; }
+ #hydrogrameen-app .hg-grid-3 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ #hydrogrameen-app .hg-process { grid-template-columns:repeat(2,1fr); gap:28px; }
+ #hydrogrameen-app .hg-process::before { display:none; }
+ #hydrogrameen-app .hg-process-bubble { margin-bottom:15px; }
+ #hydrogrameen-app .hg-contact-layout { grid-template-columns:1fr; gap:30px; }
+ #hydrogrameen-app .hg-footer-top { grid-template-columns:1fr 1fr; }
+ #hydrogrameen-app .hg-footer-top > :first-child { grid-column:1 / -1; }
+ #hydrogrameen-app .hg-event-panel { grid-template-columns:1fr; }
+ #hydrogrameen-app .hg-event-art { min-height:270px; }
+}
+@media (max-width:570px) {
+ #hydrogrameen-app .hg-header-inner { min-height:73px; }
+ #hydrogrameen-app .hg-brand img { width:40px; height:40px; }
+ #hydrogrameen-app .hg-brand-name { font-size:1.13rem; }
+ #hydrogrameen-app .hg-brand-sub { font-size:.53rem; }
+ #hydrogrameen-app .hg-header-actions .hg-btn { display:none; }
+ #hydrogrameen-app .hg-section { padding:63px 0; }
+ #hydrogrameen-app .hg-section-sm { padding:53px 0; }
+ #hydrogrameen-app .hg-hero-grid { padding:60px 0 73px; gap:37px; }
+ #hydrogrameen-app .hg-hero h1 { font-size:clamp(2.7rem,10vw,3.55rem); }
+ #hydrogrameen-app .hg-hero-copy > p { font-size:.99rem; }
+ #hydrogrameen-app .hg-hero-visual { width:100%; padding-left:15px; }
+ #hydrogrameen-app .hg-hero-image { border-radius:100px 11px 90px 11px; height:350px; }
+ #hydrogrameen-app .hg-photo-overlay { left:23px; right:18px; bottom:22px; }
+ #hydrogrameen-app .hg-photo-overlay strong { font-size:1.14rem; }
+ #hydrogrameen-app .hg-hero-float { max-width:220px; left:-5px; bottom:20px; padding:13px; }
+ #hydrogrameen-app .hg-hero-float .hg-float-icon { height:37px; width:37px; }
+ #hydrogrameen-app .hg-hero-float strong { font-size:.69rem; }
+ #hydrogrameen-app .hg-hero-float small { font-size:.61rem; }
+ #hydrogrameen-app .hg-cta-row { align-items:stretch; }
+ #hydrogrameen-app .hg-cta-row .hg-btn { width:100%; }
+ #hydrogrameen-app .hg-grid-2, #hydrogrameen-app .hg-grid-3, #hydrogrameen-app .hg-grid-4 { grid-template-columns:1fr; }
+ #hydrogrameen-app .hg-card { padding:26px; }
+ #hydrogrameen-app .hg-title { font-size:clamp(1.85rem,7vw,2.55rem); }
+ #hydrogrameen-app .hg-title-sm { font-size:clamp(1.65rem,6vw,2.3rem); }
+ #hydrogrameen-app .hg-page-hero h1 { font-size:clamp(2.5rem,9vw,3.3rem); }
+ #hydrogrameen-app .hg-water-band { padding:37px 25px; border-radius:14px; }
+ #hydrogrameen-app .hg-process { grid-template-columns:1fr; }
+ #hydrogrameen-app .hg-process-step { border-left:2px solid #DBE8E7; padding-left:19px; }
+ #hydrogrameen-app .hg-process-bubble { margin-left:-42px; width:44px; height:44px; }
+ #hydrogrameen-app .hg-img-frame img { height:275px; }
+ #hydrogrameen-app .hg-founder { grid-template-columns:1fr; padding:27px; gap:20px; }
+ #hydrogrameen-app .hg-monogram { width:88px; height:88px; font-size:1.9rem; }
+ #hydrogrameen-app .hg-founder h2 { font-size:1.65rem; }
+ #hydrogrameen-app .hg-event-art { padding:30px; }
+ #hydrogrameen-app .hg-event-info { padding:30px; }
+ #hydrogrameen-app .hg-contact-form { padding:26px 21px; }
+ #hydrogrameen-app .hg-field-row { grid-template-columns:1fr; gap:0; }
+ #hydrogrameen-app .hg-footer-inner { padding-top:50px; }
+ #hydrogrameen-app .hg-footer-top { grid-template-columns:1fr; gap:35px; padding-bottom:45px; }
+ #hydrogrameen-app .hg-footer-top > :first-child { grid-column:auto; }
+ #hydrogrameen-app .hg-footer-bottom { flex-direction:column; }
+ #hydrogrameen-app .hg-resource { flex-direction:column; }
+}
+@media (prefers-reduced-motion:reduce) { #hydrogrameen-app .hg-site *, #hydrogrameen-app .hg-site *::before, #hydrogrameen-app .hg-site *::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; } }
