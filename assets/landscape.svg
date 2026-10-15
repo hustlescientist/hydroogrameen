@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 880" role="img" aria-labelledby="t d">
+<title id="t">Illustrative mountain watershed landscape</title><desc id="d">Layered blue-green mountains and a freshwater lake at sunrise.</desc>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#9BD4DB"/><stop offset=".62" stop-color="#D9F0E4"/><stop offset="1" stop-color="#FFF3D8"/></linearGradient><linearGradient id="lake" x2="0" y2="1"><stop stop-color="#81C7C5"/><stop offset="1" stop-color="#155B78"/></linearGradient><linearGradient id="hill" x2="0" y2="1"><stop stop-color="#437F79"/><stop offset="1" stop-color="#0D4F65"/></linearGradient></defs>
+<rect width="1200" height="880" fill="url(#sky)"/><circle cx="920" cy="190" r="93" fill="#FFF3CF" opacity=".68"/>
+<path d="M0 442 160 277 302 410 481 207 679 436 831 296 1006 415 1110 267 1200 355v525H0Z" fill="#83ACAC"/>
+<path d="m0 492 165-116 204 127 189-196 199 216 139-113 164 115 140-114v469H0Z" fill="#5C9395"/>
+<path d="M0 552c139-125 218-111 326-42 124 80 192 17 309-25 116-42 175 72 287 41 90-25 182-56 278 31v323H0Z" fill="url(#hill)"/>
+<path d="M0 618C212 560 281 635 414 621s255-40 410-8 284 24 376-7v274H0Z" fill="url(#lake)"/>
+<path d="M0 676c165-8 280-4 412 5 173 12 279-23 457-12 104 6 202 12 331-2" fill="none" stroke="#DCF3E4" stroke-width="4" opacity=".47"/>
+<path d="M-20 738c200-19 273 7 435 0s282-32 426-12 210 7 380-2M-20 793c164 5 261 23 425 7s278-21 439-2 227 0 362-9" fill="none" stroke="#CEF0E9" stroke-width="3" opacity=".32"/>
+<path d="M0 578c98-32 140-51 233-53s123 30 197 29" fill="none" stroke="#D7EEDC" stroke-width="3" opacity=".4"/>
+<g fill="#153E4C"><path d="m4 607 24-95 26 95zM45 616l25-128 26 128zM1040 616l31-133 34 133zM1100 624l37-149 38 149z"/></g>
+<g opacity=".3"><circle cx="130" cy="122" r="3" fill="white"/><circle cx="290" cy="185" r="4" fill="white"/><circle cx="450" cy="94" r="3" fill="white"/><circle cx="1090" cy="150" r="5" fill="white"/></g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 880" role="img" aria-labelledby="t d">
+<title id="t">Illustrative winding river and green watershed</title><desc id="d">A winding river seen from above with green fields and trees.</desc>
+<defs><linearGradient id="land" x2="1" y2="1"><stop stop-color="#6BA77C"/><stop offset="1" stop-color="#1C5C52"/></linearGradient><linearGradient id="river" x2="0" y2="1"><stop stop-color="#8DD5D8"/><stop offset="1" stop-color="#2E86AB"/></linearGradient><pattern id="crop" patternUnits="userSpaceOnUse" width="100" height="100"><path d="M0 0v100M20 0v100M40 0v100M60 0v100M80 0v100" stroke="#D0D894" stroke-width="2" opacity=".24"/></pattern></defs>
+<rect width="1200" height="880" fill="url(#land)"/><path d="M0 0h570v880H0" fill="url(#crop)" opacity=".8"/>
+<path d="M-90 165c176-113 315-42 371 91s15 186 171 196 303-81 348-206 148-194 415-104l-35 179c-195-31-248 19-285 113s-135 215-298 206-236-126-316-124-164 31-250 84L-90 165Z" fill="#C2DFC0" opacity=".7"/>
+<path d="M-90 205c164-91 240-28 288 85s58 247 207 241 300-48 375-181 169-163 445-100l-45 150c-199-37-248 22-301 126s-189 174-375 139-203-103-301-93S82 637-90 716V205Z" fill="url(#river)"/>
+<path d="M-90 300c171-110 242-27 297 86s93 197 234 199 275-85 362-174 184-138 393-100" fill="none" stroke="#E7FCF3" stroke-width="12" opacity=".24"/>
+<g fill="#143D4A" opacity=".7"><circle cx="960" cy="700" r="42"/><circle cx="1048" cy="728" r="33"/><circle cx="1093" cy="646" r="40"/><circle cx="148" cy="768" r="31"/><circle cx="91" cy="789" r="29"/><circle cx="371" cy="130" r="31"/><circle cx="460" cy="93" r="23"/><circle cx="1040" cy="94" r="34"/></g>
+</svg>

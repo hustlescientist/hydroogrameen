@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 880" role="img" aria-labelledby="t d">
+<title id="t">Illustrative green forest valley</title><desc id="d">Mountain forest and a turquoise stream.</desc>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#B5DED5"/><stop offset="1" stop-color="#F0ECD6"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#94D5D0"/><stop offset="1" stop-color="#19586C"/></linearGradient></defs>
+<rect width="1200" height="880" fill="url(#sky)"/><circle cx="602" cy="227" r="111" fill="#FFF3CA" opacity=".64"/>
+<path d="M0 478 196 310 420 496 630 262 847 451 1051 276 1200 395v485H0Z" fill="#74A293"/>
+<path d="M0 557c176-89 303-51 454-6s266-50 411-60 255 13 335 82v307H0Z" fill="#40796C"/>
+<g fill="#154D4F"><path d="m33 666 83-275 91 275zM177 674l74-217 79 217zM900 687l97-302 100 302zM1039 700l70-262 80 262z"/></g>
+<path d="M480 880c-19-129 32-214 97-274s127-121 77-227l101-8c69 128-9 217-59 281s-51 139-29 228H480Z" fill="url(#water)"/>
+<path d="M555 880c-6-126 39-181 102-264s90-132 46-230" fill="none" stroke="#DCF7E8" stroke-width="8" opacity=".45"/>
+<path d="M0 802c231-67 358-39 491 0M694 808c189-71 332-47 506-9" stroke="#AAD39B" stroke-width="4" fill="none" opacity=".6"/>
+</svg>
